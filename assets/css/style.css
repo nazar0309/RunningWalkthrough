@@ -45,9 +45,6 @@ main {
     margin-top: 47px;
 }
 
-footer {
-    background-color: orange;
-}
 
 #menu {
     font-size: 110%;
@@ -83,4 +80,55 @@ nav {
 
 .nav-toggle-label {
     font-size: 2rem;
+}
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+/*Medie query: tablets and larger */
+
+@media  screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+        }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 78px;
+        margin: 0 0.5rem;
+    }
+    main {
+        margin-top: 79px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
+    }
 }
