@@ -5,12 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vw;
     display: flex;
     flex-direction: column;
     /*Generic project styles*/
     color: #3a3a3a;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
 }
 header {
     background-color: lightcoral;
