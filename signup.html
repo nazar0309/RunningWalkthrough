@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -36,14 +38,42 @@
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="galery.html">Gallery</a></li>
                 <li><a href="signup.html" class="active">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main content -->
-    <main>Main content</main>
+    <main>
+        <section id="sign-up">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
+                <label for="first_name">First Name</label>
+                <input id="first_name" class="text-input" type="text" name="first-name" required><br>
+                <label for="last_name">Last Name</label>
+                <input id="last_name" class="text-input" type="text" name="last-name" required><br>
+                <label for="email_address">Email Address</label>
+                <input id="email_address" class="text-input" type="email" name="email" required><br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input id="road" type="radio" name="running-preference" checked="checked">
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input id="trail" type="radio" name="running-preference">
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input id="both" type="radio" name="running-preference">
+                    </div>
+                </div>
+                <input type="submit" class="join-button" value="Lets Run!">
+
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
